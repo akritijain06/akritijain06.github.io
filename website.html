@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akriti Jain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode header {
+            background: #2d2d2d;
+            border-bottom-color: #404040;
+        }
+
+        body.dark-mode .social-icons a,
+        body.dark-mode nav a {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .social-icons a:hover,
+        body.dark-mode nav a:hover {
+            color: #7b8ff0;
+        }
+
+        body.dark-mode .callout-box {
+            background: #2d2d2d;
+            border-color: #404040;
+        }
+
+        body.dark-mode .about-text {
+            color: #c0c0c0;
+        }
+
+        body.dark-mode .profile-photo {
+            border-color: #404040;
+        }
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode .pub-title,
+        body.dark-mode .patent-title,
+        body.dark-mode .pub-authors strong {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .pub-authors {
+            color: #a0a0a0;
+        }
+
+        body.dark-mode .pub-venue {
+            color: #909090;
+        }
+
+        body.dark-mode .pub-links a,
+        body.dark-mode .pub-links button {
+            background: #2d2d2d;
+            border-color: #505050;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .pub-links a:hover,
+        body.dark-mode .pub-links button:hover {
+            background: #3d3d3d;
+            border-color: #606060;
+        }
+
+        body.dark-mode .abstract {
+            background-color: #2d2d2d;
+            border-color: #505050;
+            color: #c0c0c0;
+        }
+
+        body.dark-mode .patent-info {
+            color: #a0a0a0;
+        }
+
+        body.dark-mode footer {
+            border-top-color: #404040;
+            color: #808080;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            background: none;
+            border: none;
+            color: inherit;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: transform 0.3s;
+            padding: 0;
+        }
+
+        .dark-mode-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Header/Navigation */
+        header {
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #5568d3;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1.05em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #5568d3;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-photo {
+            flex-shrink: 0;
+        }
+
+        .profile-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 .lastname {
+            font-weight: 400;
+        }
+
+        .callout-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 12px 18px;
+            margin: 20px 0;
+            font-size: 0.92em;
+        }
+
+        .about-text {
+            font-size: 0.98em;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .contact-link {
+            color: #9c27b0;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .contact-link:hover {
+            border-bottom: 1px solid #9c27b0;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 1.75em;
+            font-weight: 700;
+            margin-bottom: 25px;
+            margin-top: 45px;
+        }
+
+        /* Publications */
+        .pub-item {
+            margin-bottom: 30px;
+        }
+
+        .venue-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-emnlp {
+            background: #c2185b;
+        }
+
+        .badge-arr {
+            background: #6c757d;
+        }
+
+        .badge-iclr {
+            background: #0288d1;
+        }
+
+        .badge-interspeech {
+            background: #9c27b0;
+        }
+
+        .pub-title {
+            font-size: 1em;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            color: #555;
+            margin-bottom: 4px;
+            font-size: 0.88em;
+        }
+
+        .pub-authors strong {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.88em;
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pub-links a, .pub-links button {
+            padding: 6px 14px;
+            background: white;
+            border: 1px solid #ddd;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.88em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .pub-links a:hover, .pub-links button:hover {
+            background: #f8f9fa;
+            border-color: #999;
+        }
+
+        /* Abstract */
+        .abstract {
+            margin-top: 15px;
+            padding: 15px 18px;
+            background-color: #f8f9fa;
+            border: 1px dashed #ccc;
+            border-radius: 4px;
+            display: none;
+            font-size: 0.88em;
+            line-height: 1.7;
+            color: #444;
+            text-align: justify;
+        }
+
+        .abstract.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Patents */
+        .patent-item {
+            margin-bottom: 25px;
+        }
+
+        .patent-title {
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 6px;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .patent-info {
+            color: #666;
+            font-size: 0.92em;
+        }
+
+        /* News */
+        .news-item {
+            margin-bottom: 12px;
+            font-size: 0.98em;
+        }
+
+        .news-date {
+            color: #5568d3;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 200px;
+                height: 200px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9em;
+            }
+
+            .header-content {
+                padding: 0 20px;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="social-icons">
+                <a href="mailto:09akritijain@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/akriti-jain1/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="#" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> -->
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#patents">Patents</a></li>
+                    <li><a href="resumev2.pdf" download>CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Akriti <span class="lastname">Jain</span></h1>
+                
+                <div class="callout-box">
+                    Applying for an MS in Computer Science, Fall 2026
+                </div>
+
+                <p class="about-text">
+                    I am a Research Associate at Adobe Research (Multimodal Content Experiences Lab) working on Machine Learning and Natural Language Processing. My research focuses on improving the efficiency and reliability of generative language models.
+                </p>
+
+                <p class="about-text">
+                    At Adobe, I work on two main areas: multi-document reasoning systems with a focus on factual grounding and response alignment with user intent, and inference optimization through token compression. The latter has been shipped to production, achieving 15% token reduction without compromising answer quality.
+                </p>
+
+                <p class="about-text">
+                    I graduated first in my department from IIT Roorkee with a B.Tech in Electrical Engineering (CGPA 9.35/10.00). My research has led to 2 publications at EMNLP 2025 and 2 filed patents, with more manuscripts currently under review. If you would like to discuss ideas or collaborate, feel free to contact me via <a href="mailto:09akritijain@gmail.com" class="contact-link">email</a>.
+                </p>
+            </div>
+            <div class="hero-photo">
+                <img src="prof_pic2.jpg" alt="Akriti Jain" class="profile-photo">
+            </div>
+        </div>
+
+        <!-- Publications -->
+        <h2 id="publications">Publications</h2>
+
+        <div class="pub-item">
+            <span class="venue-badge badge-emnlp">EMNLP</span>
+            <div class="pub-title">Doc2Chart: Intent-Driven Zero-Shot Chart Generation from Documents</div>
+            <div class="pub-authors"><strong>Akriti Jain</strong>, Pritika Ramu, Aparna Garimella, Apoorv Saxena</div>
+            <div class="pub-venue">In The 2025 Conference on Empirical Methods in Natural Language Processing, 2025</div>
+            <div class="pub-links">
+                <button onclick="toggleAbstract('abs1')">ABS</button>
+                <a href="https://arxiv.org/abs/2507.14819" target="_blank">ARXIV</a>
+            </div>
+            <div id="abs1" class="abstract">
+                Large Language Models (LLMs) have demonstrated strong capabilities in transforming text descriptions or tables to data visualizations via instruction-tuning methods. However, it is not straightforward to apply these methods directly for a more real-world use case of visualizing data from long documents based on user-given intents, as opposed to the user pre-selecting the relevant content manually. We introduce the task of intent-based chart generation from documents: given a user-specified intent and document(s), the goal is to generate a chart adhering to the intent and grounded on the document(s) in a zero-shot setting. We propose an unsupervised, two-staged framework in which an LLM first extracts relevant information from the document(s) by decomposing the intent and iteratively validates and refines this data. Next, a heuristic-guided module selects an appropriate chart type before final code generation. To assess the data accuracy of the generated charts, we propose an attribution-based metric that uses a structured textual representation of charts, instead of relying on visual decoding metrics that often fail to capture the chart data effectively. To validate our approach, we curate a dataset comprising of 1,242 &lt;intent, document, charts&gt; tuples from two domains, finance and scientific, in contrast to the existing datasets that are largely limited to parallel text descriptions/ tables and their corresponding charts. We compare our approach with baselines using single-shot chart generation using LLMs and query-based retrieval methods; our method outperforms by upto 9 points and 17 points in terms of chart data accuracy and chart type respectively over the best baselines.
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <span class="venue-badge badge-emnlp">EMNLP</span>
+            <div class="pub-title">FiRST: Finetuning Router-Selective Transformers for Input-Adaptive Latency Reduction</div>
+            <div class="pub-authors"><strong>Akriti Jain</strong>*, Saransh Sharma*, Koyel Mukherjee, Soumyabrata Pal</div>
+            <div class="pub-venue">In Findings of the Association for Computational Linguistics: EMNLP 2025</div>
+            <div class="pub-links">
+                <button onclick="toggleAbstract('abs2')">ABS</button>
+                <a href="https://arxiv.org/abs/2410.12513" target="_blank">ARXIV</a>
+            </div>
+            <div id="abs2" class="abstract">
+                Auto-regressive Large Language Models (LLMs) demonstrate remarkable performance across different domains such as vision and language processing. However, due to sequential processing through a stack of transformer layers, autoregressive decoding faces significant computation/latency challenges, particularly in resource-constrained environments like mobile and edge devices. Existing approaches in literature that aim to improve latency via skipping layers have two distinct flavors - 1) Early exit, and 2) Input-agnostic heuristics where tokens exit at pre-determined layers irrespective of input sequence. Both the above strategies have limitations - the former cannot be applied to handle KV Caching necessary for speed-ups in modern framework and the latter does not capture the variation in layer importance across tasks or more generally, across input sequences. To address both limitations, we propose FiRST, an algorithm that reduces inference latency by using layer-specific routers to select a subset of transformer layers adaptively for each input sequence - the prompt (during the prefill stage) decides which layers will be skipped during decoding. FiRST preserves compatibility with KV caching enabling faster inference while being quality-aware. FiRST is model-agnostic and can be easily enabled on any pre-trained LLM. Our approach reveals that input adaptivity is critical - indeed, different task-specific middle layers play a crucial role in evolving hidden representations depending on tasks. Extensive experiments show that FiRST significantly reduces latency while outperforming other layer selection strategies in quality metics. It retains competitive performance to base model (without layer skipping) and in some cases, even improves upon it. FiRST is thus a promising and efficient solution for LLM deployment in low-resource environments.
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <span class="venue-badge badge-arr">Under Review</span>
+            <div class="pub-title">Modeling Contextual Passage Utility for Multihop Question Answering</div>
+            <div class="pub-authors"><strong>Akriti Jain</strong>, Aparna Garimella</div>
+            <div class="pub-venue">Under review at ACL ARR, 2025</div>
+            <div class="pub-links">
+                <button onclick="toggleAbstract('abs3')">ABS</button>
+            </div>
+            <div id="abs3" class="abstract">
+                Multihop Question Answering (QA) requires systems to identify and synthesize information from multiple text passages. While most prior retrieval methods assist in identifying relevant passages for QA, further assessing the utility of the passages can help in removing redundant ones, which may otherwise add to noise and inaccuracies in the generated answers. Existing utility prediction approaches model passage utility independently, overlooking a critical aspect of multi-hop reasoning, that a passage's utility can be context-dependent, influenced by its relation to other passages—whether it provides complementary information, or forms a crucial link in conjunction with others. In this paper, we propose a light-weight approach to model contextual passage utility, accounting for inter-passage dependencies. We fine-tune a small transformer-based model to predict passage utility scores for multihop QA. We leverage the reasoning traces from an advanced reasoning model to capture the order in which passages are used to answer a question, to obtain synthetic training data. Through comprehensive experiments, we demonstrate that our utility-based scoring of retrieved passages leads to better reranking and downstream task performance compared to relevance-based reranking methods.
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <span class="venue-badge badge-arr">Under Review</span>
+            <div class="pub-title">Knowing What's Missing: Assessing Information Sufficiency in Question Answering</div>
+            <div class="pub-authors"><strong>Akriti Jain</strong>, Aparna Garimella</div>
+            <div class="pub-venue">Under review at ACL ARR, 2025</div>
+            <div class="pub-links">
+                <button onclick="toggleAbstract('abs4')">ABS</button>
+            </div>
+            <div id="abs4" class="abstract">
+                Determining whether a provided context contains sufficient information to answer a question is a critical challenge for building reliable question-answering systems. While simple prompting strategies have shown success for factual questions, including both single-hop and multi-hop queries, they frequently fail on inferential questions that require reasoning beyond direct text extraction. We hypothesize that for such cases, asking a model to first reason about what specific information is missing provides a more reliable, implicit signal for assessing overall sufficiency than a direct judgment does. Specifically, we propose a structured, two-step Identify-then-Verify framework for robust sufficiency modeling. Our method first identifies what specific information appears to be missing from the provided context by generating and finding a consensus among multiple hypotheses. It then performs a critical verification step, forcing the model to re-examine the source text to confirm whether this supposedly missing information is truly absent. We evaluate our method against established baselines across a diverse suite of datasets, including multi-hop and factual QA. The results demonstrate that by forcing the model to justify its claims about missing information, our framework produces a more accurate sufficiency judgment while detailing any information gaps.
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <span class="venue-badge badge-arr">Under Review</span>
+            <div class="pub-title">MIRAGE: Multi-hop Reasoning with Ambiguity Evaluation for Illusory Queries</div>
+            <div class="pub-authors">Jeonghyun Park, Ingeol Baek, Seunghyun Yoon, Haeun Jang, Aparna Garimella, <strong>Akriti Jain</strong>, Nedim Lipka, Hwanhee Lee</div>
+            <div class="pub-venue">Under review at ICLR 2025</div>
+            <div class="pub-links">
+                <button onclick="toggleAbstract('abs5')">ABS</button>
+                <a href="https://arxiv.org/abs/2509.22750" target="_blank">ARXIV</a>
+            </div>
+            <div id="abs5" class="abstract">
+                Real-world Multi-hop Question Answering (QA) often involves ambiguity that is inseparable from the reasoning process itself. This ambiguity creates a distinct challenge, where multiple reasoning paths emerge from a single question, each requiring independent resolution. Since each sub-question is ambiguous, the model must resolve ambiguity at every step. Thus, answering a single question requires handling multiple layers of ambiguity throughout the reasoning chain. We find that current Large Language Models (LLMs) struggle in this setting, typically exploring wrong reasoning paths and producing incomplete answers. To facilitate research on multi-hop ambiguity, we introduce MultI-hop Reasoning with AmbiGuity Evaluation for Illusory Questions (MIRAGE), a benchmark designed to analyze and evaluate this challenging intersection of ambiguity interpretation and multi-hop reasoning. MIRAGE contains 1,142 high-quality examples of ambiguous multi-hop questions, categorized under a taxonomy of syntactic, general, and semantic ambiguity, and curated through a rigorous multi-LLM verification pipeline. Our experiments reveal that even state-of-the-art models struggle on MIRAGE, confirming that resolving ambiguity combined with multi-step inference is a distinct and significant challenge. To establish a robust baseline, we propose CLarifying Ambiguity with a Reasoning and InstructiON (CLARION), a multi-agent framework that significantly outperforms existing approaches on MIRAGE, paving the way for more adaptive and robust reasoning systems.
+            </div>
+        </div>
+
+        <!-- Patents -->
+        <h2 id="patents">Patents</h2>
+
+        <div class="patent-item">
+            <div class="patent-title">Generating Charts from Documents Based on User Intent and Document Data</div>
+            <div class="patent-info">
+                <strong>Akriti Jain</strong>, Pritika Ramu, Aparna Garimella • 
+                US Patent Application, Application No: P13973-US, Filed
+            </div>
+        </div>
+
+        <div class="patent-item">
+            <div class="patent-title">Skipping Layers in Large Language Models Utilizing Layer-Specific Routers with Low Rank Adapters</div>
+            <div class="patent-info">
+                <strong>Akriti Jain</strong>, Saransh Sharma, Koyel Mukherjee, Soumyabrata Pal, Aayush Acharya, Saud Iqbal • 
+                US Patent Application, Application No: P13522-US, Filed
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Last updated: October 2025
+    </footer>
+
+    <script>
+        function toggleAbstract(id) {
+            const abstract = document.getElementById(id);
+            abstract.classList.toggle('show');
+        }
+
+        // Dark mode toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+            
+            // Toggle icon
+            const icon = document.querySelector('.dark-mode-toggle i');
+            if (isDark) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        // Load dark mode preference
+        window.addEventListener('DOMContentLoaded', () => {
+            const darkMode = localStorage.getItem('darkMode');
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+                const icon = document.querySelector('.dark-mode-toggle i');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
