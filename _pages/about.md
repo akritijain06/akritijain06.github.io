@@ -27,4 +27,6 @@ latest_posts:
 
 I am a Research Associate at Adobe Research in the Multimodal Content Experience Lab, where I work on making language models more reliable and efficient for document-centric applications. My research focuses on addressing calibration gaps between confidence and correctness. I am particularly interested in uncertainty quantification and methods that leverage confidence signals to improve model outputs, particularly in multi-step reasoning and information-seeking tasks.
 
-My work spans multi-document question answering, retrieval-augmented generation, and efficient inference. I have published papers at EMNLP, AACL-IJCNLP, with additional work under review at ACL ARR and ICLR 2025. Before joining Adobe, I completed my B.Tech in Electrical Engineering from IIT Roorkee, where I graduated with the highest academic standing in my department.
+I have published papers at EMNLP, AACL-IJCNLP, with additional work under review at ACL-ARR and ICLR 2025. Before joining Adobe, I completed my B.Tech in Electrical Engineering from IIT Roorkee, where I graduated with the highest academic standing in my department (GPA 9.35/10.00).
+
+ If you would like to discuss ideas or collaborate, feel free to reach out at [09akritijain@gmail.com](mailto:09akritijain@gmail.com).
