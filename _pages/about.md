@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Associate, <a href='https://research.adobe.com/'>Adobe Research</a>
+subtitle: 
 
 profile:
   align: right
