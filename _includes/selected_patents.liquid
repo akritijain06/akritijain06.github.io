@@ -1,27 +1,4 @@
 <div class="publications">
-  {% for patent in site.data.patents %}
-  <div class="row">
-    <div class="col-sm-2 abbr">
-      <abbr class="badge">USPTO</abbr>
-    </div>
-    <div id="patent-{{ forloop.index }}" class="col-sm-8">
-      <div class="title">{{ patent.title }}</div>
-      <div class="author">
-        {% assign author_array = patent.authors | split: ", " %}
-        {% for author in author_array %}
-          {% if author == "Akriti Jain" %}
-            <em>{{ author }}</em>
-          {% else %}
-            {{ author }}
-          {% endif %}
-          {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </div>
-      <div class="periodical">
-        <em>{% if patent.number != "" %}{{ patent.number }}{% endif %}</em> [{{ patent.status }}]
-      </div>
-    </div>
-  </div>
-  {% endfor %}
+  {% bibliography --file patents --query @*[selected=true]* %}
 </div>
 
