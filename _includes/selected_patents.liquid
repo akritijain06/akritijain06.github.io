@@ -1,0 +1,16 @@
+<div class="publications">
+  <ol>
+    {% for patent in site.data.patents %}
+    <li>
+      <b>{{ patent.title }}</b><br>
+      <em>{{ patent.authors }}</em><br>
+      {% if patent.number != "" %}
+        <em>{{ patent.number }}</em> [{{ patent.status }}]
+      {% else %}
+        [{{ patent.status }}]
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
