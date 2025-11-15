@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /patents/
+permalink: /#patents
 title: patents
 description: Filed and approved patents from my research work.
 nav: true
