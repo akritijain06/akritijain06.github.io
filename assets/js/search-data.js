@@ -21,7 +21,7 @@ ninja.data = [{
           description: "Filed and approved patents from my research work.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/patents/";
+            window.location.href = "/#patents";
           },
         },{id: "nav-cv",
           title: "cv",
