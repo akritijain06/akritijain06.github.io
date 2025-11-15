@@ -1,115 +1,57 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@inproceedings{jain2025doc2chart,
+  abbr={EMNLP},
+  title={Doc2Chart: Intent-Driven Zero-Shot Chart Generation from Documents},
+  author={Jain, Akriti and Ramu, Pritika and Garimella, Aparna and Saxena, Apoorv},
+  booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2025},
   selected={true},
-  inspirehep_id = {3255}
+  arxiv={2507.14819},
+  html={https://aclanthology.org/2025.emnlp-main.1770/},
+  abstract={Large Language Models (LLMs) have demonstrated strong capabilities in transforming text descriptions or tables to data visualizations via instruction-tuning methods. However, it is not straightforward to apply these methods directly for a more real-world use case of visualizing data from long documents based on user-given intents, as opposed to the user pre-selecting the relevant content manually. We introduce the task of intent-based chart generation from documents: given a user-specified intent and document(s), the goal is to generate a chart adhering to the intent and grounded on the document(s) in a zero-shot setting. We propose an unsupervised, two-staged framework in which an LLM first extracts relevant information from the document(s) by decomposing the intent and iteratively validates and refines this data. Next, a heuristic-guided module selects an appropriate chart type before final code generation. To assess the data accuracy of the generated charts, we propose an attribution-based metric that uses a structured textual representation of charts, instead of relying on visual decoding metrics that often fail to capture the chart data effectively. To validate our approach, we curate a dataset comprising of 1,242 <intent, document, charts> tuples from two domains, finance and scientific, in contrast to the existing datasets that are largely limited to parallel text descriptions/ tables and their corresponding charts. We compare our approach with baselines using single-shot chart generation using LLMs and query-based retrieval methods; our method outperforms by upto 9 points and 17 points in terms of chart data accuracy and chart type respectively over the best baselines.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{jain2025first,
+  abbr={EMNLP},
+  title={FiRST: Finetuning Router-Selective Transformers for Input-Adaptive Latency Reduction},
+  author={Jain*, Akriti and Sharma*, Saransh and Mukherjee, Koyel and Pal, Soumyabrata},
+  booktitle={Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2025},
+  selected={true},
+  arxiv={2410.12513},
+  html={https://aclanthology.org/2025.findings-emnlp.1197/},
+  abstract={Auto-regressive Large Language Models (LLMs) demonstrate remarkable performance across different domains such as vision and language processing. However, due to sequential processing through a stack of transformer layers, autoregressive decoding faces significant computation/latency challenges, particularly in resource-constrained environments like mobile and edge devices. Existing approaches in literature that aim to improve latency via skipping layers have two distinct flavors - 1) Early exit, and 2) Input-agnostic heuristics where tokens exit at pre-determined layers irrespective of input sequence. Both the above strategies have limitations - the former cannot be applied to handle KV Caching necessary for speed-ups in modern framework and the latter does not capture the variation in layer importance across tasks or more generally, across input sequences. To address both limitations, we propose FiRST, an algorithm that reduces inference latency by using layer-specific routers to select a subset of transformer layers adaptively for each input sequence - the prompt (during the prefill stage) decides which layers will be skipped during decoding. FiRST preserves compatibility with KV caching enabling faster inference while being quality-aware. FiRST is model-agnostic and can be easily enabled on any pre-trained LLM. Our approach reveals that input adaptivity is critical - indeed, different task-specific middle layers play a crucial role in evolving hidden representations depending on tasks. Extensive experiments show that FiRST significantly reduces latency while outperforming other layer selection strategies in quality metics. It retains competitive performance to base model (without layer skipping) and in some cases, even improves upon it. FiRST is thus a promising and efficient solution for LLM deployment in low-resource environments.
+}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{jain2025utility,
+  abbr={AACL},
+  title={Modeling Contextual Passage Utility for Multihop Question Answering},
+  author={Jain, Akriti and Garimella, Aparna},
+  booktitle={Annual Meeting of the Association for Asian Computational Linguistics and International Joint Conference on Natural Language Processing (AACL-IJCNLP)},
+  year={2025},
+  selected={true},
+  html={https://drive.google.com/file/d/1xNeS0wYrCBJ7obt0uHlFWuA3lyJzVApk/view?usp=sharing},
+  abstract={Multihop Question Answering (QA) requires systems to identify and synthesize information from multiple text passages. While most prior retrieval methods assist in identifying relevant passages for QA, further assessing the utility of the passages can help in removing redundant ones, which may otherwise add to noise and inaccuracies in the generated answers. Existing utility prediction approaches model passage utility independently, overlooking a critical aspect of multi-hop reasoning, that the utility of a passage can be context-dependent, influenced by its relation to other passages—whether it provides complementary information, or forms a crucial link in conjunction with others. In this paper, we propose a light-weight approach to model contextual passage utility, accounting for inter-passage dependencies. We fine-tune a small transformer-based model to predict passage utility scores for multihop QA. We leverage the reasoning traces from an advanced reasoning model to capture the order in which passages are used to answer a question, to obtain synthetic training data. Through comprehensive experiments, we demonstrate that our utility-based scoring of retrieved passages leads to better reranking and downstream task performance compared to relevance-based reranking methods. }
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{jain2024sufficiency,
+  title={Knowing What's Missing: Assessing Information Sufficiency in Question Answering},
+  author={Jain, Akriti and Garimella, Aparna},
+  journal={Under review at ACL ARR},
+  year={2024},
+  selected={true},
+  abstract={Determining whether a provided context contains sufficient information to answer a question is a critical challenge for building reliable question-answering systems. While simple prompting strategies have shown success on factual questions, they frequently fail on inferential ones that require reasoning beyond direct text extraction. We hypothesize that asking a model to first reason about what specific information is missing provides a more reliable, implicit signal for assessing overall sufficiency. To this end, we propose a structured Identify-then-Verify framework for robust sufficiency modeling. Our method first generates multiple hypotheses about missing information and establishes a semantic consensus. It then performs a critical verification step, forcing the model to re-examine the source text to confirm whether this information is truly absent. We evaluate our method against established baselines across a diverse suite of datasets, including multi-hop and factual QA. The results demonstrate that by forcing the model to justify its claims about missing information, our framework produces a more accurate sufficiency judgment while detailing any information gaps.}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{park2024mirage,
+  title={MIRAGE: Multi-hop Reasoning with Ambiguity Evaluation for Illusory Queries},
+  author={Park, Jeonghyun and Baek, Ingeol and Yoon, Seunghyun and Jang, Haeun and Garimella, Aparna and Jain, Akriti and Lipka, Nedim and Lee, Hwanhee},
+  journal={Under review at ICLR},
+  year={2025},
+  arxiv={2509.22750},
+  html={https://arxiv.org/abs/2509.22750},
+  abstract={Real-world Multi-hop Question Answering (QA) often involves ambiguity that is inseparable from the reasoning process itself. This ambiguity creates a distinct challenge, where multiple reasoning paths emerge from a single question, each requiring independent resolution. Since each sub-question is ambiguous, the model must resolve ambiguity at every step. Thus, answering a single question requires handling multiple layers of ambiguity throughout the reasoning chain. We find that current Large Language Models (LLMs) struggle in this setting, typically exploring wrong reasoning paths and producing incomplete answers. To facilitate research on multi-hop ambiguity, we introduce MultI-hop Reasoning with AmbiGuity Evaluation for Illusory Questions (MIRAGE), a benchmark designed to analyze and evaluate this challenging intersection of ambiguity interpretation and multi-hop reasoning. MIRAGE contains 1,142 high-quality examples of ambiguous multi-hop questions, categorized under a taxonomy of syntactic, general, and semantic ambiguity, and curated through a rigorous multi-LLM verification pipeline. Our experiments reveal that even state-of-the-art models struggle on MIRAGE, confirming that resolving ambiguity combined with multi-step inference is a distinct and significant challenge. To establish a robust baseline, we propose CLarifying Ambiguity with a Reasoning and InstructiON (CLARION), a multi-agent framework that significantly outperforms existing approaches on MIRAGE, paving the way for more adaptive and robust reasoning systems.}
 }
