@@ -67,7 +67,7 @@ layout: default
     <!-- Patents -->
     {% if page.selected_patents %}
       <h2 id="patents">
-        <a href="#patents" style="color: inherit"Patents</a>
+         <a href="{{ '/patents/' | relative_url }}" style="color: inherit">Patents</a>
       </h2>
       {% include selected_patents.liquid %}
     {% endif %}
