@@ -25,10 +25,10 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "Download my CV/Resume",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/assets/pdf/resume_final.pdf";
           },
         },{id: "post-a-post-with-plotly-js",
         
