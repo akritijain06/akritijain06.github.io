@@ -13,8 +13,6 @@
   abstract={Decision-making is a cognitively intensive task that requires synthesizing relevant information from multiple unstructured sources, weighing competing factors, and incorporating subjective user preferences. Existing methods, including large language models and traditional decision-support systems, fall short: they often overwhelm users with information or fail to capture nuanced preferences accurately. We present Decisive, an interactive decision-making framework that combines document-grounded reasoning with Bayesian preference inference. Our approach grounds decisions in an objective option-scoring matrix extracted from source documents, while actively learning a user’s latent preference vector through targeted elicitation. Users answer pairwise tradeoff questions adaptively selected to maximize information gain over the final decision. This process converges efficiently, minimizing user effort while ensuring recommendations remain transparent and personalized. Through extensive experiments, we demonstrate that our approach significantly outperforms both general-purpose LLMs and existing decision-making frameworks achieving up to 20% improvement in decision accuracy over strong baselines across domains.}
 }
 
-
-
 @inproceedings{jain2025doc2chart,
   abbr={EMNLP},
   title={Doc2Chart: Intent-Driven Zero-Shot Chart Generation from Documents},
@@ -61,18 +59,6 @@
   arxiv={https://arxiv.org/abs/2512.06464},
   html={https://aclanthology.org/2025.ijcnlp-short.37/},
   abstract={Multihop Question Answering (QA) requires systems to identify and synthesize information from multiple text passages. While most prior retrieval methods assist in identifying relevant passages for QA, further assessing the utility of the passages can help in removing redundant ones, which may otherwise add to noise and inaccuracies in the generated answers. Existing utility prediction approaches model passage utility independently, overlooking a critical aspect of multi-hop reasoning, that the utility of a passage can be context-dependent, influenced by its relation to other passages—whether it provides complementary information, or forms a crucial link in conjunction with others. In this paper, we propose a light-weight approach to model contextual passage utility, accounting for inter-passage dependencies. We fine-tune a small transformer-based model to predict passage utility scores for multihop QA. We leverage the reasoning traces from an advanced reasoning model to capture the order in which passages are used to answer a question, to obtain synthetic training data. Through comprehensive experiments, we demonstrate that our utility-based scoring of retrieved passages leads to better reranking and downstream task performance compared to relevance-based reranking methods. }
-}
-
-@inproceedings{park2024mirage,
-  abbr={ACL},
-  title={Decisive: Guiding User Decisions with Optimal Preference Elicitation from Unstructured Documents},
-  author={Jain, Akriti and  Mulay, Anish and Verma, Divyansh and Pandey, Aishani and Ramu, Pritika and Garimella, Aparna},
-  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
-  year={2026},
-  selected={false},
-  arxiv={2604.18122},
-  html={https://aclanthology.org/2026.acl-long.1465/},
-  abstract={Decision-making is a cognitively intensive task that requires synthesizing relevant information from multiple unstructured sources, weighing competing factors, and incorporating subjective user preferences. Existing methods, including large language models and traditional decision-support systems, fall short: they often overwhelm users with information or fail to capture nuanced preferences accurately. We present Decisive, an interactive decision-making framework that combines document-grounded reasoning with Bayesian preference inference. Our approach grounds decisions in an objective option-scoring matrix extracted from source documents, while actively learning a user’s latent preference vector through targeted elicitation. Users answer pairwise tradeoff questions adaptively selected to maximize information gain over the final decision. This process converges efficiently, minimizing user effort while ensuring recommendations remain transparent and personalized. Through extensive experiments, we demonstrate that our approach significantly outperforms both general-purpose LLMs and existing decision-making frameworks achieving up to 20% improvement in decision accuracy over strong baselines across domains.}
 }
 
 @inproceedings{park2024mirage,
