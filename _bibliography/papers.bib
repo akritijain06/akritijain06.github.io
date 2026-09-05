@@ -1,11 +1,25 @@
 ---
 ---
 
+@inproceedings{jain2026decisive,
+  abbr={ACL 2026},
+  title={Decisive: Guiding User Decisions with Optimal Preference Elicitation from Unstructured Documents},
+  author={Jain, Akriti and  Mulay, Anish and Verma, Divyansh and Pandey, Aishani and Ramu, Pritika and Garimella, Aparna},
+  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
+  year={2026},
+  selected={true},
+  arxiv={2604.18122},
+  html={https://aclanthology.org/2026.acl-long.1465/},
+  abstract={Decision-making is a cognitively intensive task that requires synthesizing relevant information from multiple unstructured sources, weighing competing factors, and incorporating subjective user preferences. Existing methods, including large language models and traditional decision-support systems, fall short: they often overwhelm users with information or fail to capture nuanced preferences accurately. We present Decisive, an interactive decision-making framework that combines document-grounded reasoning with Bayesian preference inference. Our approach grounds decisions in an objective option-scoring matrix extracted from source documents, while actively learning a user’s latent preference vector through targeted elicitation. Users answer pairwise tradeoff questions adaptively selected to maximize information gain over the final decision. This process converges efficiently, minimizing user effort while ensuring recommendations remain transparent and personalized. Through extensive experiments, we demonstrate that our approach significantly outperforms both general-purpose LLMs and existing decision-making frameworks achieving up to 20% improvement in decision accuracy over strong baselines across domains.}
+}
+
+
+
 @inproceedings{jain2025doc2chart,
   abbr={EMNLP},
   title={Doc2Chart: Intent-Driven Zero-Shot Chart Generation from Documents},
   author={Jain, Akriti and Ramu, Pritika and Garimella, Aparna and Saxena, Apoorv},
-  booktitle={The Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
   year={2025},
   selected={true},
   arxiv={2507.14819},
@@ -17,7 +31,7 @@
   abbr={EMNLP},
   title={FiRST: Finetuning Router-Selective Transformers for Input-Adaptive Latency Reduction},
   author={Jain*, Akriti and Sharma*, Saransh and Mukherjee, Koyel and Pal, Soumyabrata},
-  booktitle={The Findings of Empirical Methods in Natural Language Processing (EMNLP)},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2025},
   year={2025},
   selected={true},
   arxiv={2410.12513},
@@ -29,10 +43,11 @@
   abbr={EACL},
   title={Knowing What's Missing: Assessing Information Sufficiency in Question Answering},
   author={Jain, Akriti and Garimella, Aparna},
-  booktitle={The Findings of European Chapter of the Association for Computational Linguistics},
+  booktitle={Findings of the Association for Computational Linguistics: EACL 2026},
   year={2026},
-  selected={true},
-  html={https://arxiv.org/abs/2512.06476},
+  selected={false},
+  arxiv={https://arxiv.org/abs/2512.06476},
+  html={https://aclanthology.org/2026.findings-eacl.217/},
   abstract={Determining whether a provided context contains sufficient information to answer a question is a critical challenge for building reliable question-answering systems. While simple prompting strategies have shown success on factual questions, they frequently fail on inferential ones that require reasoning beyond direct text extraction. We hypothesize that asking a model to first reason about what specific information is missing provides a more reliable, implicit signal for assessing overall sufficiency. To this end, we propose a structured Identify-then-Verify framework for robust sufficiency modeling. Our method first generates multiple hypotheses about missing information and establishes a semantic consensus. It then performs a critical verification step, forcing the model to re-examine the source text to confirm whether this information is truly absent. We evaluate our method against established baselines across a diverse suite of datasets, including multi-hop and factual QA. The results demonstrate that by forcing the model to justify its claims about missing information, our framework produces a more accurate sufficiency judgment while detailing any information gaps.}
 }
 
@@ -40,29 +55,46 @@
   abbr={IJCNLP-AACL},
   title={Modeling Contextual Passage Utility for Multihop Question Answering},
   author={Jain, Akriti and Garimella, Aparna},
-  booktitle={The International Joint Conference on Natural Language Processing & Asia-Pacific Chapter of the Association for Computational Linguistics},
+  booktitle={Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics},
   year={2025},
-  selected={true},
-  html={https://arxiv.org/abs/2512.06464},
+  selected={false},
+  arxiv={https://arxiv.org/abs/2512.06464},
+  html={https://aclanthology.org/2025.ijcnlp-short.37/},
   abstract={Multihop Question Answering (QA) requires systems to identify and synthesize information from multiple text passages. While most prior retrieval methods assist in identifying relevant passages for QA, further assessing the utility of the passages can help in removing redundant ones, which may otherwise add to noise and inaccuracies in the generated answers. Existing utility prediction approaches model passage utility independently, overlooking a critical aspect of multi-hop reasoning, that the utility of a passage can be context-dependent, influenced by its relation to other passages—whether it provides complementary information, or forms a crucial link in conjunction with others. In this paper, we propose a light-weight approach to model contextual passage utility, accounting for inter-passage dependencies. We fine-tune a small transformer-based model to predict passage utility scores for multihop QA. We leverage the reasoning traces from an advanced reasoning model to capture the order in which passages are used to answer a question, to obtain synthetic training data. Through comprehensive experiments, we demonstrate that our utility-based scoring of retrieved passages leads to better reranking and downstream task performance compared to relevance-based reranking methods. }
 }
 
-@article{jain2026decisive,
+@inproceedings{park2024mirage,
+  abbr={ACL},
   title={Decisive: Guiding User Decisions with Optimal Preference Elicitation from Unstructured Documents},
   author={Jain, Akriti and  Mulay, Anish and Verma, Divyansh and Pandey, Aishani and Ramu, Pritika and Garimella, Aparna},
-  journal={Under review at ACL ARR January},
+  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
   year={2026},
-  selected={true},
-  abstract={Decision-making is a cognitively intensive task that requires synthesizing relevant information from multiple unstructured sources, weighing competing factors, and incorporating subjective user preferences. Existing methods, including large language models and traditional decision-support systems, fall short: they often overwhelm users with information or fail to capture nuanced preferences accurately. We present Decisive, an interactive decision-making framework that combines document-grounded reasoning with Bayesian preference inference. Our approach grounds decisions in an objective option-scoring matrix extracted from source documents, while actively learning a user's latent preference vector through targeted elicitation. Users answer pairwise tradeoff questions adaptively selected to maximize information gain over the final decision. This process converges efficiently, minimizing user effort while ensuring recommendations remain transparent and personalized. Through extensive experiments, we demonstrate that our approach significantly outperforms both general-purpose LLMs and existing decision-making frameworks achieving up to 20% improvement in decision accuracy over strong baselines across domains.}
+  selected={false},
+  arxiv={2604.18122},
+  html={https://aclanthology.org/2026.acl-long.1465/},
+  abstract={Decision-making is a cognitively intensive task that requires synthesizing relevant information from multiple unstructured sources, weighing competing factors, and incorporating subjective user preferences. Existing methods, including large language models and traditional decision-support systems, fall short: they often overwhelm users with information or fail to capture nuanced preferences accurately. We present Decisive, an interactive decision-making framework that combines document-grounded reasoning with Bayesian preference inference. Our approach grounds decisions in an objective option-scoring matrix extracted from source documents, while actively learning a user’s latent preference vector through targeted elicitation. Users answer pairwise tradeoff questions adaptively selected to maximize information gain over the final decision. This process converges efficiently, minimizing user effort while ensuring recommendations remain transparent and personalized. Through extensive experiments, we demonstrate that our approach significantly outperforms both general-purpose LLMs and existing decision-making frameworks achieving up to 20% improvement in decision accuracy over strong baselines across domains.}
 }
 
-@article{park2024mirage,
-  title={MIRAGE: Multi-hop Reasoning with Ambiguity Evaluation for Illusory Queries},
+@inproceedings{park2024mirage,
+  abbr={ACL}
+  title={MARCH: Evaluating the Intersection of Ambiguity Interpretation and Multi-hop Inference},
   author={Park, Jeonghyun and Baek, Ingeol and Yoon, Seunghyun and Jang, Haeun and Garimella, Aparna and Jain, Akriti and Lipka, Nedim and Lee, Hwanhee},
-  journal={Under review at ACL ARR January},
-  year={2025},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
+  year={2026},
   arxiv={2509.22750},
-  selected={true},
-  html={https://arxiv.org/abs/2509.22750},
-  abstract={Real-world Multi-hop Question Answering (QA) often involves ambiguity that is inseparable from the reasoning process itself. This ambiguity creates a distinct challenge, where multiple reasoning paths emerge from a single question, each requiring independent resolution. Since each sub-question is ambiguous, the model must resolve ambiguity at every step. Thus, answering a single question requires handling multiple layers of ambiguity throughout the reasoning chain. We find that current Large Language Models (LLMs) struggle in this setting, typically exploring wrong reasoning paths and producing incomplete answers. To facilitate research on multi-hop ambiguity, we introduce MultI-hop Reasoning with AmbiGuity Evaluation for Illusory Questions (MIRAGE), a benchmark designed to analyze and evaluate this challenging intersection of ambiguity interpretation and multi-hop reasoning. MIRAGE contains 1,142 high-quality examples of ambiguous multi-hop questions, categorized under a taxonomy of syntactic, general, and semantic ambiguity, and curated through a rigorous multi-LLM verification pipeline. Our experiments reveal that even state-of-the-art models struggle on MIRAGE, confirming that resolving ambiguity combined with multi-step inference is a distinct and significant challenge. To establish a robust baseline, we propose CLarifying Ambiguity with a Reasoning and InstructiON (CLARION), a multi-agent framework that significantly outperforms existing approaches on MIRAGE, paving the way for more adaptive and robust reasoning systems.}
+  selected={false},
+  html={https://aclanthology.org/2026.findings-acl.1352/},
+  abstract={Real-world multi-hop QA is naturally linked with ambiguity, where a single query can trigger multiple reasoning paths that require independent resolution. Since ambiguity can occur at any stage, models must navigate layered uncertainty throughout the entire reasoning chain. Despite its prevalence in real-world user queries, previous benchmarks have primarily focused on single-hop ambiguity, leaving the complex interaction between multi-step inference and layered ambiguity underexplored. In this paper, we introduce MARCH, a benchmark for their intersection, with 2,209 multi-hop ambiguous questions curated via multi-LLM verification and validated by human annotation with strong agreement. Our experiments reveal that even state-of-the-art models struggle with MARCH, confirming that combining ambiguity resolution with multi-step reasoning is a significant challenge. To address this, we propose CLARION, a two-stage agentic framework that explicitly decouples ambiguity planning from evidence-driven reasoning, significantly outperforms existing approaches, and paves the way for robust reasoning systems.}
 }
+
+@inproceedings{pham2026analystbench,
+  abbr={ACL},
+  title={AnalystBench: Benchmarking professional long-form report generation with web-mined multimodal tasks},
+  author={Pham, Chau Minh and Wang, Zichao and Mathur, Puneet and Siu, Alexa and Jain, Akriti and Garimella, Aparna and Sai, Ananya B. and Lipka, Nedim and Iyyer, Mohit and Manjunatha, Varun},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
+  year={2026},
+  selected={false},
+  html={https://aclanthology.org/2026.findings-acl.1197/},
+  abstract={Large language models are increasingly used to draft long-form multimodal documents, but their end-to-end performance on professional report generation remains systematically understudied. We introduce AnalystBench, a continually extensible benchmark of 20 real-world report generation tasks grounded in multimodal document collections, where models must process millions of input tokens to produce long-form professional reports. Using expert-validated quality checklists and groundedness evaluation, we evaluate LLMs and coding agents and find that the best model, GPT-5.1, scores highly on executive summarization tasks (exceeding 90% on quality checklists) but degrades substantially on tasks requiring long-horizon synthesis over large inputs (dropping to 25-40%). Agent-based generation substantially benefits strong closed-source models such as GPT-5.1, with checklist scores improving by 20.24 percentage points and visual coverage by 37.41 points over vanilla generation, but offers little or negative gains for open-source models like DeepSeek-R1 (-3.02 points). Expert reviewers note that while generated reports are grounded and clearly separate factual description from interpretation, they often fall short in actionability, clarity, and quantitative precision, which highlights the gap between system performance and real-world professional needs.}
+}
+
