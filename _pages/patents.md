@@ -2,7 +2,7 @@
 layout: page
 permalink: /patents/
 title: patents
-description: Filed and approved patents from my research work. Generated automatically from patents.bib.
+description: Approved and filed patents from my research work. 
 nav: true
 nav_order: 3
 ---
