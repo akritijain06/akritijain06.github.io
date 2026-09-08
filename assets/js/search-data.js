@@ -18,10 +18,10 @@ ninja.data = [{
           },
         },{id: "nav-patents",
           title: "patents",
-          description: "Filed and approved patents from my research work.",
+          description: "Filed and approved patents from my research work. Generated automatically from patents.bib.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/#patents";
+            window.location.href = "/patents/";
           },
         },{id: "nav-cv",
           title: "cv",
