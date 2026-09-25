@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a first year CS PhD student at [Cornell University](https://www.cs.cornell.edu/) advised by Prof. [Kaitlyn Zhou] (https://katezhou.github.io/). I work in NLP, with a focus on improving model outputs in subjective and goal-oriented tasks. My research explores model behavior and user-LM interactions, specifically looking at how models influence and respond to users (including sycophancy, persuasion and multi-turn interaction) to enable more meaningful engagement.
+I am a first year CS PhD student at [Cornell University](https://www.cs.cornell.edu/) advised by Prof. [Kaitlyn Zhou](https://katezhou.github.io/). My research is in Natural Language Processing (NLP), with a focus on improving model outputs in subjective and goal-oriented tasks. I am interested in exploring model behavior, specifically looking at how models influence and respond to users (including but not limited to sycophancy, persuasion and multi-turn interactions) to enable more meaningful engagement.
 
 Previously, I was a Research Associate at [Adobe Research](https://research.adobe.com/) in the Multimodal Content Experience Lab (MCEL), where I worked on making LLMs more reliable and efficient for document-centric applications. Before joining Adobe, I completed my B.Tech in Electrical Engineering from IIT Roorkee, where I graduated with the highest academic standing in my department.
 
