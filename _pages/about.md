@@ -24,8 +24,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a first year CS PhD student at [Cornell University](https://www.cs.cornell.edu/). My research focuses on understanding and improving language model behavior, particularly in subjective workflows. 
+I am a first year CS PhD student at [Cornell University](https://www.cs.cornell.edu/) advised by Prof. [Kaitlyn Zhou] (https://katezhou.github.io/). I work in NLP, with a focus on improving model outputs in subjective and goal-oriented tasks. My research explores model behavior and user-LM interactions, specifically looking at how models influence and respond to users (including sycophancy, persuasion and multi-turn interaction) to enable more meaningful engagement.
 
 Previously, I was a Research Associate at [Adobe Research](https://research.adobe.com/) in the Multimodal Content Experience Lab (MCEL), where I worked on making LLMs more reliable and efficient for document-centric applications. Before joining Adobe, I completed my B.Tech in Electrical Engineering from IIT Roorkee, where I graduated with the highest academic standing in my department.
 
-If you would like to discuss ideas or collaborate, feel free to reach out at aj732[dot]cornell[dot]edu.
+If you would like to discuss ideas or collaborate, feel free to reach out at aj732[at]cornell[dot]edu.
