@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-patents",
           title: "patents",
-          description: "Filed and approved patents from my research work. Generated automatically from patents.bib.",
+          description: "Approved and filed patents from my research work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/patents/";
