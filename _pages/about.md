@@ -8,9 +8,11 @@ profile:
   align: right
   image: prof_pic3.jpg
   image_circular: true # crops the image to make it circular
+  image_style: "max-width: 180px;"
   more_info: >
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers_title: selected publications
 social: true # includes social icons at the bottom of the page
 
 announcements:
