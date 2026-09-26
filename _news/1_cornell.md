@@ -7,4 +7,4 @@ related_posts: false
 
 Started my PhD in Computer Science at Cornell University.
 
-- Awarded a Cornell University Graduate Fellowship.
+- Awarded Cornell University Fellowship.
