@@ -398,11 +398,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-joined-adobe-research-as-a-research-associate",
-          title: 'Joined Adobe Research as a Research Associate!',
-          description: "",
-          section: "News",},{id: "news-graduate-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
+            },},{id: "news-graduate-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
           title: 'Graduate from IIT Roorkee.     Awarded the Department Gold Medal for highest GPA.',
+          description: "",
+          section: "News",},{id: "news-joined-adobe-research-as-a-research-associate",
+          title: 'Joined Adobe Research as a Research Associate!',
           description: "",
           section: "News",},{id: "news-started-my-phd-in-computer-science-at-cornell-university-awarded-cornell-university-fellowship",
           title: 'Started my PhD in Computer Science at Cornell University. Awarded Cornell University Fellowship....',
