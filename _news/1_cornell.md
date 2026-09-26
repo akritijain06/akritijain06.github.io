@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Started my PhD in Computer Science at Cornell University.
+Started my PhD in Computer Science at Cornell University
 
 <small>Awarded Cornell University Fellowship</small>
