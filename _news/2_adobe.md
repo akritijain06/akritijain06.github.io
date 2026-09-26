@@ -7,4 +7,4 @@ related_posts: false
 ---
 
 Spent a fantastic 2 years at Adobe Research as a Research Associate!
-- Published papers and filed multiple patents for my work.
+<small>Published papers and filed multiple patents for my work</small>
