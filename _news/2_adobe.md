@@ -6,5 +6,5 @@ inline: true
 related_posts: false
 ---
 
-Spent a fantastic 2 years at Adobe Research as a Research Associate!
+Spent a fantastic 2 years at Adobe Research as a Research Associate!<br>
 <small>Published papers and filed multiple patents for my work</small>
