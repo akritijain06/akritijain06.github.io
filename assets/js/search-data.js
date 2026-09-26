@@ -405,7 +405,7 @@ ninja.data = [{
           title: 'Spent a fantastic 2 years at Adobe Research as a Research Associate! Published...',
           description: "",
           section: "News",},{id: "news-started-my-phd-in-computer-science-at-cornell-university-awarded-the-cornell-university-graduate-fellowship",
-          title: 'Started my PhD in Computer Science at Cornell University! Awarded the Cornell University...',
+          title: 'Started my PhD in Computer Science at Cornell University Awarded the Cornell University...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
