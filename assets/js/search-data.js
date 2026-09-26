@@ -398,14 +398,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-graduate-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
-          title: 'Graduate from IIT Roorkee   Awarded the Department Gold Medal for highest GPA',
+            },},{id: "news-graduated-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
+          title: 'Graduated from IIT Roorkee!   Awarded the Department Gold Medal for highest GPA',
           description: "",
           section: "News",},{id: "news-spent-a-fantastic-2-years-at-adobe-research-as-a-research-associate-published-papers-and-filed-multiple-patents-for-my-work-on-llms",
           title: 'Spent a fantastic 2 years at Adobe Research as a Research Associate! Published...',
           description: "",
           section: "News",},{id: "news-started-my-phd-in-computer-science-at-cornell-university-awarded-the-cornell-university-graduate-fellowship",
-          title: 'Started my PhD in Computer Science at Cornell University Awarded the Cornell University...',
+          title: 'Started my PhD in Computer Science at Cornell University! Awarded the Cornell University...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
