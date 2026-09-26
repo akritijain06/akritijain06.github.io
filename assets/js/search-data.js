@@ -399,7 +399,7 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-graduate-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
-          title: 'Graduate from IIT Roorkee  Awarded the Department Gold Medal for highest GPA',
+          title: 'Graduate from IIT Roorkee   Awarded the Department Gold Medal for highest GPA',
           description: "",
           section: "News",},{id: "news-spent-a-fantastic-2-years-at-adobe-research-as-a-research-associate-published-papers-and-filed-multiple-patents-for-my-work-on-llms",
           title: 'Spent a fantastic 2 years at Adobe Research as a Research Associate! Published...',
