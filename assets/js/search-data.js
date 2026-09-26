@@ -398,13 +398,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-joined-adobe-research-as-a-research-associate",
+          title: 'Joined Adobe Research as a Research Associate!',
           description: "",
           section: "News",},{id: "news-started-my-phd-in-computer-science-at-cornell-university-awarded-a-cornell-university-graduate-fellowship",
           title: 'Started my PhD in Computer Science at Cornell University. Awarded a Cornell University...',
