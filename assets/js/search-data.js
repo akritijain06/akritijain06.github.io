@@ -391,8 +391,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-graduated-from-iit-roorkee-awarded-the-department-gold-medal-for-highest-gpa",
-          title: 'Graduated from IIT Roorkee!   Awarded the Department Gold Medal for highest GPA',
+            },},{id: "news-our-paper-decisive-was-accepted-to-acl-2026-main-conference",
+          title: 'Our paper Decisive was accepted to ACL 2026 Main Conference!',
           description: "",
           section: "News",},{id: "news-wrapped-up-two-wonderful-years-at-adobe-research-published-papers-and-filed-multiple-patents-for-my-work-on-llms",
           title: 'Wrapped up two wonderful years at Adobe Research. Published papers and filed multiple...',
