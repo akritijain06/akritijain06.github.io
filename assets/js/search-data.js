@@ -391,8 +391,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-presented-our-paper-on-context-sufficiency-https-aclanthology-org-2026-findings-eacl-217-in-question-answering-at-eacl-2026-in-rabat-morocco",
-          title: 'Presented our paper on [Context Sufficiency](https://aclanthology.org/2026.findings-eacl.217/) in Question Answering at EACL 2026 in...',
+            },},{id: "news-presented-our-paper-on-information-sufficiency-in-question-answering-at-eacl-2026-in-rabat-morocco",
+          title: 'Presented our paper on Information Sufficiency in Question Answering at EACL 2026 in...',
           description: "",
           section: "News",},{id: "news-our-paper-decisive-was-accepted-to-acl-2026-main-conference",
           title: 'Our paper Decisive was accepted to ACL 2026 Main Conference!',
