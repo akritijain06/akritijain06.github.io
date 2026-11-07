@@ -27,7 +27,9 @@ latest_posts:
 
 I am a first year CS PhD student at [Cornell University](https://www.cs.cornell.edu/) advised by Prof. [Kaitlyn Zhou](https://katezhou.github.io/). 
 
-I work in **Natural Language Processing (NLP)**, broadly focusing on human-AI alignment and social behaviors in LLMs. As AI becomes deeply integrated into our daily lives, models are increasingly tasked with handling nuanced, open-ended conversations. Inspired by this, my research explores how to make model outputs more reliable and aligned to user intent, particularly in subjective tasks.
+I work in **Natural Language Processing (NLP)**, broadly focusing on improving the reliability of language model outputs. My research spans factual grounding and evaluation, as well as understanding model behavior in subjective, user-dependent interactions. As AI becomes increasingly integrated into our daily lives, I am particularly interested in building models that can respond effectively to diverse user needs while maintaining the trustworthiness of their responses.
+
+<!-- I work in **Natural Language Processing (NLP)**, broadly focusing on human-AI alignment and social behaviors in LLMs. As AI becomes deeply integrated into our daily lives, models are increasingly tasked with handling nuanced, open-ended conversations. Inspired by this, my research explores how to make model outputs more reliable and aligned to user intent, particularly in subjective tasks. -->
 
 <!--My research explores how systems navigate subjective, goal-oriented tasks and adapt to users to make human-AI interaction safer, reliable and more meaningful.-->
 
