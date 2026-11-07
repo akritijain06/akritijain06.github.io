@@ -16,19 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-patents",
-          title: "patents",
-          description: "Approved and filed patents from my research work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/patents/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/assets/pdf/Resume_updated_eacl.pdf";
+            window.location.href = "/assets/pdf/CV_updated.pdf";
           },
         },{id: "post-a-post-with-plotly-js",
         
